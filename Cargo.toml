@@ -5,19 +5,15 @@ authors = ["Connor Postma <connor.postma@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+# The Discord API crate
+ferriscord = { directory = "../ferriscord/"}
 # Debug logging
-env_logger = "0.6.1"
-# Helper to retreive
+env_logger = "0.6"
+# Helper to retreive .env
 dotenv = "0.14"
 # The most fun web and actor system framework
 actix = "0.8.1"
 actix-web = "1.0.0-beta.3"
 actix-rt = "0.2.2"
-# A handle bars based html engine. Very fast, and includes templates on compile time
-yarte = { version = "0.2", features = ["with-actix-web"] }
-# Serialization
-serde = "1.0"
-serde_derive = "1.0"
-serde_json = "1.0"
 # An adorable little crustacean that just want's to say hello
 ferris_says = "0.1.1"
