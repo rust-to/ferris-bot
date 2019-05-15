@@ -15,7 +15,6 @@ fn main() {
     // Initialize a new bot connection
     let con = discord_api::Connection::new(bot_token)
         .with_prefix('!') // the prefix to listen to for commands
-        .with_default_help() // a default auto generated !help command
         .with_commands(say, ping) // register the bot's commands
         .with_events(on_ready, on_message) // register all event callbacks
         .run(); // start the bot
